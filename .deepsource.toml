@@ -1,143 +1,64 @@
 version = 1
 
 [[analyzers]]
-name = "test-coverage"
-enabled = false
-
-[[analyzers]]
-name = "sql"
-enabled = false
-
-[[analyzers]]
-name = "csharp"
-enabled = false
-
-[[analyzers]]
-name = "docker"
-enabled = false
-
-  [analyzers.meta]
-  dockerfile_paths = ["docker/Dockerfile"]
-
-[[analyzers]]
-name = "rust"
-enabled = false
-
-  [analyzers.meta]
-  msrv = "1.30.0"
-
-[[analyzers]]
-name = "php"
-enabled = false
-
-[[analyzers]]
-name = "java"
-enabled = true
-
-  [analyzers.meta]
-  runtime_version = "11"
-
-[[analyzers]]
-name = "shell"
-enabled = false
+name = "secrets"
 
 [[analyzers]]
 name = "terraform"
-enabled = false
 
 [[analyzers]]
-name = "javascript"
-enabled = false
-
-  [analyzers.meta]
-  environment = ['nodejs']
-  plugins = ['react', 'vue']
-  dependency_file_paths = [
-    'javascript/packages/demo-react/',
-    'javascript/packages/demo-vue/',
-    'javascript/packages/demo-next/',
-    'javascript/packages/demo-nuxt/',
-    'javascript/packages/demo-typescript/'
-  ]
+name = "test-coverage"
 
 [[analyzers]]
-name = "ruby"
-enabled = false
+name = "shell"
 
 [[analyzers]]
-name = "go"
-enabled = true
+name = "sql"
 
-  [analyzers.meta]
-  import_root = "github.com/QuackatronHQ/Gigarepo"
+[[analyzers]]
+name = "scala"
 
 [[analyzers]]
 name = "python"
-enabled = true
 
   [analyzers.meta]
   runtime_version = "3.x.x"
 
 [[analyzers]]
-name = "scala"
-enabled = false
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = "11"
+
+[[analyzers]]
+name = "csharp"
 
 [[analyzers]]
 name = "ansible"
-enabled = false
 
-[[transformers]]
-name = "dotnet-format"
-enabled = false
+[[analyzers]]
+name = "docker"
 
-[[transformers]]
-name = "rustfmt"
-enabled = false
+[[analyzers]]
+name = "javascript"
 
-[[transformers]]
-name = "php-cs-fixer"
-enabled = false
+[[analyzers]]
+name = "php"
 
-[[transformers]]
-name = "google-java-format"
-enabled = false
+[[analyzers]]
+name = "rust"
 
-[[transformers]]
-name = "prettier"
-enabled = false
+  [analyzers.meta]
+  msrv = "stable"
 
-[[transformers]]
-name = "rubocop"
-enabled = false
+[[analyzers]]
+name = "ruby"
 
-[[transformers]]
-name = "gofmt"
-enabled = false
+[[analyzers]]
+name = "go"
 
-[[transformers]]
-name = "black"
-enabled = false
+  [analyzers.meta]
+  import_root = "github.com/DeepestSource/TestRepo"
 
-[[transformers]]
-name = "isort"
-enabled = false
-
-[[transformers]]
-name = "autopep8"
-enabled = false
-
-[[transformers]]
-name = "yapf"
-enabled = false
-
-[[transformers]]
-name = "gofumpt"
-enabled = false
-
-[[transformers]]
-name = "standardrb"
-enabled = false
-
-[[transformers]]
-name = "standardjs"
-enabled = false
+[[analyzers]]
+name = "cxx"
